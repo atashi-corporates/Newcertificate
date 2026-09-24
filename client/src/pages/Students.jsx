@@ -66,14 +66,17 @@ function Students() {
       if (editingId) {
         // Update Student
         await axios.put(
-          `http://localhost:5000/api/students/${editingId}`,
+          `https://certificate-backend-z3xt.onrender.com/api/students/${editingId}`,
           formData,
         );
 
         alert("Student updated successfully!");
       } else {
         // Add Student
-        await axios.post("http://localhost:5000/api/students", formData);
+        await axios.post(
+          "https://certificate-backend-z3xt.onrender.com/api/students",
+          formData,
+        );
 
         alert("Student added successfully!");
       }
@@ -136,7 +139,9 @@ function Students() {
     }
 
     try {
-      await axios.delete(`http://localhost:5000/api/students/${id}`);
+      await axios.delete(
+        `https://certificate-backend-z3xt.onrender.com/api/students/${id}`,
+      );
 
       alert("Student deleted successfully!");
 

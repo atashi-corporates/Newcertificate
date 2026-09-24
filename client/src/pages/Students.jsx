@@ -24,7 +24,9 @@ function Students() {
 
   const fetchStudents = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/students");
+      const response = await axios.get(
+        "https://certificate-backend-z3xt.onrender.com/api/students",
+      );
 
       setStudents(response.data);
     } catch (error) {

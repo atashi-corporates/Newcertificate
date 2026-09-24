@@ -11,11 +11,11 @@ function Dashboard() {
     const fetchDashboardCounts = async () => {
       try {
         const studentResponse = await axios.get(
-          "http://localhost:5000/api/students/count",
+          "https://certificate-backend-z3xt.onrender.com/api/students/count",
         );
 
         const certificateResponse = await axios.get(
-          "http://localhost:5000/api/certificates/count",
+          "https://certificate-backend-z3xt.onrender.com/api/certificates/count",
         );
 
         setStudentCount(studentResponse.data.totalStudents);

@@ -220,11 +220,12 @@
 
 .certificate-badge {
   position: absolute;
-  right: -30px;
-  top: 20px;
-  width: 380px;
-  height: 380px;
+  right: -40px;
+  top: 5px;
+  width: 430px;
+  height: 430px;
   object-fit: contain;
+  object-position: center;
   z-index: 10;
 }
 

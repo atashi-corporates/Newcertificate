@@ -662,7 +662,9 @@
 }
 
 
-/* Venue text */
+/* =====================================================
+   VENUE LABEL
+===================================================== */
 
 .workshop-venue h3 strong:first-child {
   color: #000000 !important;
@@ -672,15 +674,18 @@
   top: -10px;
 }
 
-/* Venue location */
 
-/* Venue location */
+/* =====================================================
+   VENUE VALUE / LOCATION
+===================================================== */
 
 .workshop-venue h3 strong:last-child {
   color: #040911 !important;
   font-size: 22px;
   font-weight: 800;
   line-height: 1.4;
+  position: relative;
+  top: -10px;
 }
 
 
@@ -691,12 +696,6 @@
 .workshop-certificate .contribution-text {
   margin-top: -8px !important;
 }
-
-
-/* =====================================================
-   WORKSHOP RESPONSIVE
-===================================================== */
-
 
 
 /* =====================================================
@@ -722,19 +721,29 @@
     width: 210px;
   }
 
- 
+
+  /* Workshop Venue */
+
   .workshop-venue {
     width: 100%;
     max-width: 520px;
   }
 
   .workshop-venue h3 strong:first-child {
-  position: relative;
-  top: -12px;
-}
- 
+    position: relative;
+    top: -12px;
+  }
+
+  .workshop-venue h3 strong:last-child {
+    position: relative;
+    top: -12px;
+  }
 }
 
+
+/* =====================================================
+   MOBILE
+===================================================== */
 
 @media (max-width: 700px) {
 
@@ -750,9 +759,11 @@
 
   .workshop-venue h3 strong:first-child {
     font-size: 17px;
+    top: -12px;
   }
 
   .workshop-venue h3 strong:last-child {
     font-size: 19px;
+    top: -12px;
   }
 }

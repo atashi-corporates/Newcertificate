@@ -681,7 +681,7 @@ Certificate ID: ${formData.certificateId}`;
 
               <div className="workshop-venue">
                 <h3>
-                  <strong className="venue-label">Venue:</strong>
+                  <strong className="venue-label">Venue: </strong>
 
                   <strong className="venue-location">
                     {formData.venue || " "}

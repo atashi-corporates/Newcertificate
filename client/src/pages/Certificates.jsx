@@ -255,17 +255,20 @@ Certificate ID: ${formData.certificateId}`;
       // STEP 1: SAVE CERTIFICATE TO DATABASE
       // =========================================
 
-      await axios.post("http://localhost:5000/api/certificates", {
-        certificateId: formData.certificateId,
-        certificateType: formData.certificateType,
-        student: student._id,
-        studentName: student.name,
-        course: formData.course,
-        batch: formData.batch,
-        startDate: formData.startDate,
-        endDate: formData.endDate,
-        venue: formData.certificateType === "Workshop" ? formData.venue : "",
-      });
+      await axios.post(
+        "https://certificate-backend-z3xt.onrender.com/api/certificates",
+        {
+          certificateId: formData.certificateId,
+          certificateType: formData.certificateType,
+          student: student._id,
+          studentName: student.name,
+          course: formData.course,
+          batch: formData.batch,
+          startDate: formData.startDate,
+          endDate: formData.endDate,
+          venue: formData.certificateType === "Workshop" ? formData.venue : "",
+        },
+      );
 
       // =========================================
       // STEP 2: GET CERTIFICATE ELEMENT

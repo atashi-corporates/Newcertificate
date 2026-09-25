@@ -352,6 +352,7 @@ Certificate ID: ${formData.certificateId}`;
       alert(
         error.response?.data?.message ||
           error.response?.data?.error ||
+          error.message ||
           "Failed to create certificate",
       );
     }
